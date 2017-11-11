@@ -1,0 +1,9 @@
+/app/__pycache__/
+/helloworld_web_app/__pycache__/
+__pycache__/
+*.py[cod]
+.coverage
+.idea
+.DS_Store
+.DS_Store?
+._*
