@@ -5,6 +5,7 @@ message.
 
 To run this app, simply type the following commands in your terminal:
 
+    $: docker-compose up
 
 Cheers!
 
