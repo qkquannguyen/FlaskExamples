@@ -1,0 +1,9 @@
+/app/__pycache__/
+/FlaskWebApp/__pycache__/
+__pycache__/
+*.py[cod]
+.coverage
+.idea
+.DS_Store
+.DS_Store?
+._*
