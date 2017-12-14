@@ -10,4 +10,3 @@ To run this app, simply type the following commands in your terminal:
 Cheers!
 
 - Quan Nguyen
-- Email: qk.quannguyen@gmail.com
