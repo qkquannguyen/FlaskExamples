@@ -11,32 +11,28 @@
 
 # ----------------------------------- Import Libraries / File ----------------------------------- #
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 
 
 # --------------------------------------- Initialize App. --------------------------------------- #
 app = Flask(__name__)
 
-
+ 
 # --------------------------------------- Import Settings --------------------------------------- #
-
 '''
 Use the following code to import your settings that is written in Python.
 
     app.config.from_object('<your python setting file here>')
 '''
-
 app.config.from_object('settings')
 
 
-
 # ------------------------------------- Initialize Database ------------------------------------- #
-
 '''
 Simply initialize a MySQL Database with Flask by using the code below. This will utilize the
 SQLAlchemy Library from Flask.
 '''
-db = SQLAlchemy(app) 
-
+db = SQLAlchemy(app)
 
 
 # -------------------------------- Import Application Controller -------------------------------- #

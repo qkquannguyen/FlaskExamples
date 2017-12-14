@@ -6,18 +6,18 @@ services:
     ports:
       - 5000:5000
     volumes:
-      - ../flask-mysql:/flask-mysql
+      - ../flask-mysql:/Flask_MySQL_App
     container_name: MyFlaskApp
   
-  links:
-    - MySQLDB:mysql
-  depends_on:
-    - MySQLDB
+    links:
+      - MySQLDB:mysql
+    depends_on:
+      - MySQLDB
   
   MySQLDB:
     image: mysql:5.7.20
     container_name: MyFlaskApp_DB
     environment:
-      MySQL_DATABASE: my_games
-      MySQL_USER: root
-      MySQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: flask_db
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: password

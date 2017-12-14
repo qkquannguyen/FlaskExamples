@@ -21,7 +21,7 @@ RUN yum -y update && yum clean all
 RUN yum -y install epel-release && yum clean all
 RUN yum -y install python34 && yum clean all
 RUN yum -y install python34-libs python34-setuptools mysql-connector-python && yum clean all
-RUN yum -y install python34-pip gcc python34-devel git && yum clean all
+RUN yum -y install mysql-devel python34-pip gcc python34-devel git && yum clean all
 RUN easy_install-3.4 pip && yum clean all
 RUN pip install --upgrade pip
 
@@ -41,4 +41,4 @@ EXPOSE 5000
 
 
 # ----------------------------------- Define Default Commands ----------------------------------- #
-CMD ["python3", "flask_mysql_app.py", "runserver"]
+CMD ["python3", "flask_mysql_manage.py", "runserver"]
