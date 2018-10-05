@@ -6,7 +6,7 @@ The main purpose of this project is to teach people who are new to Flask and Doc
 back-end developing.
 
 This project is great for resumes and I highly encourage you to follow through this repository and
-learn the basics of Docker, Flask, MySQL, and how to write neat and efficient code.
+learn the basics of Docker, Flask, MySQL.
 
 Best Regards!
 
